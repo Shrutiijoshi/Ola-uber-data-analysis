@@ -17,3 +17,9 @@ The primary objectives of this analysis are:
 - Database: MySQL.
 
 ## SQL queries
+```
+select Name,avg(Fare)
+from Customer join Trips
+on Customer.Customer_ID=Trips.Customer_ID
+join Customer_address
+on Customer.Customer_ID=Customer_address.Customer_ID
